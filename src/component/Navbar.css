@@ -1,0 +1,149 @@
+.navbar{
+    width: 100%;
+    height: 100px;
+    /* position: ; */
+    z-index: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar .containers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    height: ;
+    width: 90%;
+    
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    z-index: 5;
+
+}
+.humburger{
+display: none;
+padding: 1rem;
+
+
+}
+.mobile-menu{
+    display: none;
+    
+}
+
+.nav-menu{
+    display: flex;
+    
+}
+.nav-menu li{
+    padding: 1rem;
+    
+}
+.nav-menu li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(56,198,178);
+    font-weight: 600;
+
+}
+.hide li{
+    width: 200px;
+    background-color: blue;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    
+
+
+}
+.hide li:hover{
+    background-color:rgb(56,198,178) ;
+    color: black;
+}
+.hide li a{
+    color: white;
+}
+
+
+@media screen and (max-width: 940px) {
+    .humburger{
+        display: block;
+        color: black;
+        z-index: 5;
+    }
+
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+
+    }
+    .nav-menu{
+        
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        height: 100vh;
+        background-color: rgb(56,198,178);
+        color: black;
+        top: 0;
+        right: 100%;
+        transition: 0.9s ease-in-out;
+        
+
+    }
+    .active{
+        right: 0;
+    }
+
+
+    .nav-menu li{
+        margin: .5rem;
+        width: 100px;
+       
+    }
+
+    .nav-menu li a{
+        font-size: 1rem;
+        color: black;
+    }
+
+    .nav-menu li:hover{
+        border-radius: 1px solid black;
+        background-color: rgba(255, 228, 196, 0.412);
+        width: 175px;
+    }
+    .nav-menu button {
+        margin: 1rem auto;
+        padding: .7rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius:25px ;
+        background-color: aquamarine;
+        width: 100%;
+    }
+    .nav-menu button:hover{
+        background-color: beige;
+    }
+    .nav-menu .social-icons{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem;
+    }
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 495px){
+    .nav-menu{
+        width: 75%;
+    }
+}
